@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+body {
+    overflow-x: hidden !important;
+    line-height: 24px;
+    font-family: 'Raleway';
+}
+
+:root {
+    --textwhite: #fff;
+    --darkchok: #b1874d;
+    --lightchock: #edd388;
+    --graytext: #666;
+}
+
+
+
+a,
+a:hover,
+a:focus {
+    text-decoration: none;
+    outline: none;
+}
+
+input,
+input:focus,
+input:hover,
+button,
+button:hover,
+button:focus {
+    outline: none;
+}
+
+section {
+    overflow: hidden;
+}
+
+img {
+    width: auto;
+    max-width: 100%;
+}
+
+ul li {
+    list-style: none;
+}
+
+p {
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
+
+
+/* header css start */
+.header_section {
+    position: absolute;
+    z-index: 888;
+    width: 100%;
+}
+
+.header_section .navbar .nav-item .nav-link {
+    padding: 25px;
+    color: var(--textwhite);
+    font-family: 'Raleway';
+    font-size: 11px;
+    line-height: 2.09em;
+    letter-spacing: .3em;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.header_section .navbar {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.header_section .navbar .nav-item .brand_logo {
+    display: block;
+    width: 130px;
+}
+
+.header_section .navbar .nav-item .center_logo {
+    height: 90px;
+    width: 100%;
+
+}
+
+.mainsecslider .carousel-indicators {
+    left: 5%;
+    top: 50%;
+    margin-left: 0;
+    z-index: 1;
+    width: 0;
+    display: block;
+}
+
+.mainsecslider .carousel-indicators li {
+    height: 8px;
+    width: 8px;
+    background-color: var(--darkchok);
+    margin-bottom: 50px;
+    border-radius: 20px;
+}
+
+.mainsecslider .carousel-indicators .active {
+    background-color: var(--darkchok);
+}
+
+.mainsecslider .carousel-indicators .active::after {
+    background-color: transparent;
+    position: absolute;
+    left: -12px;
+    top: -12px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid var(--darkchok);
+}
+
+.mainsecslider .carousel-captio {
+    position: relative;
+    z-index: 8;
+}
+
+.mainsecslider .carousel-caption {
+    top: 45%;
+}
+
+.mainsecslider .carousel-caption h5 {
+    font-size: 54px;
+    font-family: 'Cormorant Garamond';
+    color: var(--textwhite);
+    letter-spacing: 12px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.mainsecslider .carousel-caption p {
+    color: var(--textwhite);
+    font-family: 'Raleway';
+    font-size: 14px;
+    letter-spacing: .3em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.mainsecslider .carousel-caption .btn_sell {
+    border-radius: 50px;
+    font-size: 14px;
+    padding: 12px 30px;
+    text-transform: uppercase;
+    margin: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.mainsecslider .carousel-caption .buylight {
+    background-color: var(--lightchock);
+    color: #000;
+}
+
+.mainsecslider .carousel-caption .sedark {
+    background-color: var(--darkchok);
+    color: var(--textwhite);
+}
+
+/* about section start */
+.about_secmain {
+    padding: 50px 0;
+}
+
+.h1_title {
+    font-size: 45px;
+    font-family: 'Cormorant Garamond';
+    letter-spacing: 7px;
+    font-weight: 500;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.about_secmain p {
+    color: var(--graytext);
+    font-family: 'Cormorant Garamond';
+    font-size: 20px;
+    font-weight: 600;
+}
+
+/* service sec start */
+.mainsec_service {
+    background-color: #0B0606;
+    background-image: url(../images/overlay_bg.png);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    padding: 120px 0;
+}
+
+.mainsec_service .service_cardbox {
+    text-align: center;
+    color: #B2B2B2;
+    min-height: 480px;
+}
+
+.mainsec_service .service_cardbox .servi_title {
+    font-size: 25px;
+    font-family: 'Cormorant Garamond';
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: var(--textwhite);
+    text-transform: uppercase;
+    ;
+}
+
+.mainsec_service .service_cardbox .servi_des {
+    line-height: 26px;
+    font-weight: 500;
+    font-family: 'Raleway';
+}
+
+.mainsec_service .service_cardbox .service_icon {
+    line-height: 100px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 1px solid #c28562;
+    margin: auto;
+    margin-bottom: 30px;
+}
+
+.mainsec_service .service_cardbox .service_icon img {
+    width: 50px;
+}
+
+.buymainsec {
+    padding: 20px;
+}
+
+.buymainsec .buy_ser_text ul li {
+    font-family: "Cormorant Garamond";
+    font-size: 20px;
+    line-height: 1.45em;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    color: #615e5e;
+    padding-bottom: 13px;
+}
+
+.buymainsec .buy_ser_text ul li img {
+    padding-right: 10px;
+    height: 22px;
+}
+
+.buy_ser_text p {
+    color: #615e5e;
+    font-family: 'Raleway';
+    font-size: 14px;
+    letter-spacing: .3em;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.main_testo_sec {
+    background-image: url(../images/testom_bg.jpg);
+    height: 100%;
+    width: 100%;
+    background-repeat: repeat;
+    background-size: cover;
+    padding: 120px 0;
+}
+
+.main_testo_sec .test_card {
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+
+.main_testo_sec .test_card .tes_title {
+    font-size: 54px;
+    font-family: 'Cormorant Garamond';
+    letter-spacing: 7px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.test_icon {
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.main_testo_sec .test_card .test_desc {
+    margin: 0 0 42px;
+    font-size: 20px;
+    color: #615e5e;
+    line-height: 1.56em;
+}
+
+.owl-carousel .owl-nav button.owl-next,
+.owl-carousel .owl-nav button.owl-prev {
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    background-color: #c28562 !important;
+    line-height: 40px !important;
+    color: #fff !Important;
+}
+
+.main_testo_sec .owl-nav {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    margin-top: -143px !important;
+}
+
+.contact_main {
+    position: relative;
+
+}
+
+.contact_main::after {
+    background-image: url('../images/contact_bg.png');
+    max-height: 500px;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    content: '';
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+}
+
+.contact_form {
+    background-image: url('../images/noise-background.jpg');
+    height: 100%;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 40px;
+    margin-top: 100px;
+    z-index: 9;
+    position: relative;
+}
+
+.contact_form .form-group {
+    margin-bottom: 40px;
+}
+
+.contact_form .form-group .form-control:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.contact_form .form-group .form-control:focus,
+.contact_form .form-group .form-control:active {
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
+.contact_form .form-group .form-control {
+    margin: 0 0 20px;
+    padding: 7px 20px 7px 0;
+    font-family: Raleway;
+    font-size: 13px;
+    line-height: 24px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: .6em;
+    color: #a5a5a5;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #d5d5d5;
+    border-radius: 0;
+    outline: 0;
+    cursor: pointer;
+}
+
+.btn_contact {
+    width: 100%;
+    background-color: #000;
+    color: #fff;
+    padding: 12px;
+    border-radius: 0px;
+    font-family: Raleway;
+    font-size: 13px;
+    line-height: 1.76em;
+    font-weight: 500;
+    letter-spacing: .3em;
+    text-decoration: none;
+    text-transform: uppercase;
+    position: relative;
+
+}
+
+.btn_contact::before {
+    background-color: transparent;
+    position: absolute;
+    left: 5px;
+    top: 4px;
+    content: '';
+    width: 98%;
+    height: 81%;
+    border: 1px solid rgba(255, 255, 255, .5);
+    padding: 5px;
+}
+
+.mainsec_footer {
+    background-color: #19130b;
+    padding: 120px 0 0 0;
+    margin-top: 100px;
+}
+
+.legal_menu h5,
+.footer_contac_de h5 {
+    font-family: "Cormorant Garamond";
+    text-transform: uppercase;
+    color: var(--textwhite);
+    font-size: 22px;
+    line-height: 1.45em;
+    font-weight: 500;
+    letter-spacing: .1em;
+    -ms-word-wrap: break-word;
+    word-wrap: break-word;
+}
+
+.footer_contac_de p {
+    color: #ccc;
+    margin: 10px 0;
+    line-height: 1.45em;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: "Cormorant Garamond";
+}
+
+.footer_contac_de p span {
+    color: #d7926b;
+}
+
+.footer_logo_sec img {
+    height: 100px;
+    margin-bottom: 50px;
+}
+
+.legal_menu {
+    color: #b2b2b2;
+}
+
+.legal_menu ul li {
+    color: #ccc;
+    margin: 10px 0;
+    line-height: 1.45em;
+    font-weight: 600;
+    font-size: 20px;
+    font-family: "Cormorant Garamond";
+}
+
+.contact_form h2 {
+    font-size: 54px;
+    font-family: 'Cormorant Garamond';
+    letter-spacing: 7px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+}
+
+.contact_form p {
+    font-size: 13px;
+    letter-spacing: .6em;
+    font-family: Raleway;
+    font-weight: 500;
+    text-transform: uppercase;
+    font-weight: 500;
+    line-height: 2.2em;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.copyright_footer {
+    margin-top: 50px;
+    text-align: center;
+    font-size: 12px;
+    color: #6f6d6b;
+    letter-spacing: .6em;
+    font-family: Raleway;
+    font-weight: 500;
+    padding: 4px 0 13px;
+    text-transform: uppercase;
+    line-height: 1em;
+}
